@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        .heading {
+            color: gold;
+        }
+
+        body {
+            background-color: blue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-form {
+            text-align: left;
+            padding: 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: lightsteelblue;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin: 10px 0 5px;
+        }
+
+        input {
+            padding: 5px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            margin: 15px auto 0;
+            padding: 8px 16px;
+            background-color: black;
+            color: white;
+        }
+        input{
+            border-radius: 5px;
+            
+        }
+                    
+    </style>
+</head>
+
+<body>
+
+    <form class="contact-form" action="Thankyou.html" method="get">
+        <div class="heading">
+            <h2>📞 Contact Us</h2>
+
+        </div>
+        <label><b>FullName</b></label>
+        <input text="fullname"required pattern="[a-Z][A-Z]" required><br><br>
+        <label><b>EmailAddress</b></label>
+        <input text="EmailAddress"required pattern="[a-Z][A-Z][@]"required><br><br>
+        <label><b>Phone number</b></label>
+        <input text="Number" required pattern="[0-9]{10}" title="Enter 10-digit phone number"required><br><br>
+        <label><b>Subject</b></label>
+        <input text="Sub"required><br><br>
+        <input type="submit" class="submit-btn">
+    </form>
+
+</body>
+
+</html>
